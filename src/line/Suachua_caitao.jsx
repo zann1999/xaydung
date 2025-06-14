@@ -1,27 +1,39 @@
-import img4 from "../img/4.jpg";
-import img5 from "../img/5.jpg";
-import img6 from "../img/6.jpg";
+import img13 from "../img/13.jpg";
+import img1 from "../img/1.jpg";
+import img2 from "../img/2.jpg";
+import img8 from "../img/8.jpg";
+import img9 from "../img/9.jpg";
+import img16 from "../img/16.jpg";
+import img11 from "../img/11.jpg";
+import img15 from "../img/15.jpg";
 
 export default function Suachua_caitao() {
   return (
     <div>
       <div className="suachua">
-        <h4>Sửa chữa, cải tạo</h4>
-        <p>
+        <div className="suachua_sub">
+          <span className="suachua_subtext">SỬA CHỮA, CẢI TẠO</span>
+        </div>
+        <p className="font_def">
           Quý khách đang có nhu cầu sửa chữa, cải tạo lại nhà ở, công trình và
           đang muốn tìm một công ty uy tín, chất lượng mà giá cả lại phải chăng?
         </p>
-        <p>
+        <p className="font_def">
           Công ty Xây Dựng Thuận Phát không chỉ thiết kế, thi công công trình,
           nhà ở mà còn nhận sửa chữa, cải tạo các kiến trúc, công trình.
         </p>
-        <p>
+        <p className="font_def">
           Đến với chúng tôi, quý khách không chỉ nhận được mức giá tốt nhất mà
           còn đảm bảo được chất lượng cũng như thời gian hoàn thiện nhanh chóng.
         </p>
-        <img className="img_tg" src={img4} alt="" />
-        <img className="img_tg" src={img5} alt="" />
-        <img className="img_tg" src={img6} alt="" />
+        <img className="img_tg" src={img13} alt="" />
+        <img className="img_tg" src={img1} alt="" />
+        <img className="img_tg" src={img2} alt="" />
+        <img className="img_tg" src={img8} alt="" />
+        <img className="img_tg" src={img9} alt="" />
+        <img className="img_tg" src={img16} alt="" />
+        <img className="img_tg" src={img11} alt="" />
+        <img className="img_tg" src={img15} alt="" />
       </div>
     </div>
   );

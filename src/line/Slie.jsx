@@ -1,4 +1,4 @@
-import logo from "../img/8.jpg";
+import logo from "../img/14.jpg";
 
 export default function Slie() {
   return (

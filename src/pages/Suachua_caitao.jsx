@@ -4,7 +4,9 @@ import Lienhe_home from "../line/Lienhe";
 export default function Suachua_caitao() {
   return (
     <div>
-      <Suachua_caitao_homme />
+      <div className="suachua_page">
+        <Suachua_caitao_homme />
+      </div>
       <Lienhe_home />
     </div>
   );
