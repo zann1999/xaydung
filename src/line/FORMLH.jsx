@@ -1,9 +1,8 @@
 import Lienhe_home from "../line/Lienhe";
 import { FaPhone, FaFacebookF } from "react-icons/fa";
 import { useState } from "react";
-import Slie from "../line/Slie";
 
-export default function Lienhe() {
+export default function FORRMLH() {
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -20,17 +19,21 @@ export default function Lienhe() {
     // TODO: Gửi dữ liệu về server hoặc xử lý tại đây
   };
   return (
-    <div className="lh">
-      <div className="backgrond_lh">
-        <Slie />
-      </div>
+    <div className="fomrmlh">
+      <div className="backgrond_lh"></div>
       <div className="lienhe_page">
         <div className="support-wrapper">
           <div className="support-box">
             <h4>Hotline tư vấn</h4>
             <p>Hỗ trợ 24/7 bất cứ lúc nào quý khách cần.</p>
-            <div className="support-button phone">
-              <FaPhone /> 078.353.7459 - 0961.033.660
+
+            <div class="call-wrapper">
+              <div class="call-pulse"></div>
+              <button class="call-button">
+                <div className="support-button phone">
+                  <FaPhone /> 078.353.7459 - 0961.033.660
+                </div>
+              </button>
             </div>
           </div>
 
@@ -43,8 +46,13 @@ export default function Lienhe() {
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <div className="support-button fb">
-                <FaFacebookF /> FANPAGE THUẬN PHÁT
+              <div class="call-wrapper">
+                <div class="call-pulse"></div>
+                <button class="call-button">
+                  <div className="support-button fb">
+                    <FaFacebookF /> FANPAGE THUẬN PHÁT
+                  </div>
+                </button>
               </div>
             </a>
           </div>
@@ -92,8 +100,6 @@ export default function Lienhe() {
             <button type="submit">NHẬN BÁO GIÁ XÂY NHÀ</button>
           </form>
         </div>
-
-        <Lienhe_home />
       </div>
     </div>
   );

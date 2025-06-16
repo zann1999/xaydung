@@ -1,5 +1,6 @@
 import Gioithieu_home from "../line/Gioithieu";
 import Lienhe_home from "../line/Lienhe";
+import FORMLH from "../line/FORMLH";
 
 import img4 from "../img/4.jpg";
 import img5 from "../img/5.jpg";
@@ -10,8 +11,12 @@ export default function Gioithieu() {
     <div>
       <div className="home_gioithieu_page">
         <div className="home_gioithieu">
-          <div>
-            <h2>VỀ CHÚNG TÔI | XÂY DỰNG THUẬN PHÁT</h2>
+          <div className="box_gt_2">
+            <h2>
+              <span className="vct">VỀ CHÚNG TÔI</span>
+              <div class="vertical-line"></div>
+              <span>XÂY DỰNG</span> <span>THUẬN PHÁT</span>
+            </h2>
             <img className="img_tg" src={img4} alt="" />
             <img className="img_tg" src={img5} alt="" />
             <img className="img_tg" src={img6} alt="" />
@@ -29,6 +34,8 @@ export default function Gioithieu() {
           </div>
         </div>
       </div>
+      <FORMLH />
+
       <Lienhe_home />
     </div>
   );

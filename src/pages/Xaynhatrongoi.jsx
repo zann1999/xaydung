@@ -1,5 +1,6 @@
 import Xaynhatrongoi_home from "../line/Xaynhatrongoi";
 import Lienhe_home from "../line/Lienhe";
+
 import {
   FaBalanceScale,
   FaTools,
@@ -30,7 +31,7 @@ export default function Xaynhatrongoi() {
     <div>
       <Xaynhatrongoi_home />
       <div className="xaynha">
-        <div className="xaynhatrongoi_page">
+        <div className="xaynhatrongoi_page" id="uunhuoc">
           <table style={{ borderCollapse: "collapse" }} className="bang">
             <thead className="title">
               <tr>
@@ -74,8 +75,8 @@ export default function Xaynhatrongoi() {
             </tbody>
           </table>
         </div>
-        <div className="quytrinh">
-          <h3>Quy trình xây nhà trọn gói tại xây dụng Thuận Phát</h3>
+        <div className="quytrinh" id="quytrinh">
+          <h3>Quy trình xây nhà trọn gói tại xây dựng Thuận Phát</h3>
           <div>
             <h4>Bước 1: </h4>
             <p>
@@ -118,7 +119,7 @@ export default function Xaynhatrongoi() {
             </p>
           </div>
         </div>
-        <div className="noibat">
+        <div className="noibat" id="noibat">
           <h3>
             Điểm nổi bật dịch vụ xây nhà trọn gói Xây Dựng Thuận Phát so với
             những đơn vị xây dựng khác
@@ -180,7 +181,7 @@ export default function Xaynhatrongoi() {
             Có chế độ, chính sách bảo hành rõ ràng từng hạng mục thi công.
           </h6>
         </div>
-        <div className="cauhoithuonggap">
+        <div className="cauhoithuonggap" id="cauhoithuonggap">
           <h3>Các câu hỏi thường gặp về giá xây nhà trọn gói</h3>
           <div>
             <h4>1. Xây nhà trọn gói có phát sinh thêm phí gì không?</h4>

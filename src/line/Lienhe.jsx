@@ -1,6 +1,7 @@
 import { FaHeadset } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 import {
   FaPhone,
@@ -9,6 +10,7 @@ import {
   FaInstagram,
   FaTiktok,
   FaYoutube,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 
 export default function Lienhe() {
@@ -20,7 +22,7 @@ export default function Lienhe() {
             <FaHeadset className="contact-icon" />
             <div>
               <div>Hotline hỗ trợ 24/7</div>
-              <strong>09215.44444</strong>
+              <strong>078.353.7459 - 0961.033.660</strong>
             </div>
           </div>
 
@@ -28,7 +30,7 @@ export default function Lienhe() {
             <SiZalo className="contact-icon" />
             <div>
               <div>Tư vấn qua Zalo</div>
-              <strong>0000000000</strong>
+              <strong>078.353.7459</strong>
             </div>
           </div>
 
@@ -36,7 +38,7 @@ export default function Lienhe() {
             <MdEmail className="contact-icon" />
             <div>
               <div>Gửi yêu cầu</div>
-              <strong>aaaaaaaaaaaaaaaaaaa@gmail.com</strong>
+              <strong>congtythuanphat57@gmail.com</strong>
             </div>
           </div>
         </div>
@@ -51,49 +53,79 @@ export default function Lienhe() {
             </p>
 
             <p>
-              <FaPhone /> Hotline: 0000000000 - 0000000000
+              <FaPhone /> Hotline: 078.353.7459 - 0961.033.660
             </p>
             <p>
-              <FaEnvelope /> Email: aaaaaaaaaaaaaaaaaa@gmail.com
+              <FaEnvelope /> Email: congtythuanphat57@gmail.com
             </p>
-            <div className="social-icons">
+            <p>
+              <FaMapMarkerAlt /> Địa chỉ 1: 278/5 DT743A, khu phố Đông An,
+              phường Tân Đông Hiệp, Dĩ An, Bình Dương.
+            </p>
+            <p>
+              <FaMapMarkerAlt /> Địa chỉ 2: thôn Nông Nghiệp, xã Hòa Bình 1, Tây
+              Hòa, Phú Yên.
+            </p>
+            {/* <div className="social-icons">
               <FaFacebook />
               <FaInstagram />
               <FaTiktok />
               <FaYoutube />
-            </div>
+            </div> */}
           </div>
 
           {/* Cột 2: Liên kết nhanh */}
           <div className="footer-col">
             <h3>Liên kết nhanh</h3>
             <ul>
-              <li>Trang chủ</li>
-              <li>Giới thiệu</li>
-              <li>Thiết kế nhà cấp 4</li>
-              <li>Thiết kế nhà hiện đại 2 tầng</li>
-              <li>Thiết kế nhà mái Nhật</li>
-              <li>Dự án đã hoàn thiện</li>
-              <li>Kiến thức</li>
-              <li>Liên hệ</li>
+              <NavLink to="/">
+                <li>Trang chủ</li>
+              </NavLink>
+
+              <NavLink to="/gioi-thieu">
+                <li>Giới thiệu</li>
+              </NavLink>
+
+              <NavLink to="/xay-nha-tron-goi">
+                <li>Nhà cấp 4</li>
+              </NavLink>
+
+              <NavLink to="/xay-nha-tron-goi">
+                <li>Nhà hiện đại 2 - 4 tầng</li>
+              </NavLink>
+
+              <NavLink to="/xay-nha-tron-goi">
+                <li>Nhà mái Nhật</li>
+              </NavLink>
+
+              <NavLink to="/sua-chua-cai-tao">
+                <li>Sửa chữa, cải tạo</li>
+              </NavLink>
+
+              <NavLink to="/lien-he">
+                <li>Liên hệ</li>
+              </NavLink>
             </ul>
           </div>
 
           {/* Cột 3: Fanpage Facebook */}
           <div className="footer-col">
-            <h3>Fanpage Facebook</h3>
-            <img src="/img/fbpage.png" alt="Fanpage" className="fb-image" />
-            <img
-              src="/img/bocongthuong.png"
-              alt="Bộ Công Thương"
-              className="cert-image"
-            />
+            <h3>
+              <FaFacebook /> Fanpage Facebook
+            </h3>
+            <a
+              href="https://www.facebook.com/share/1GdAt2fpb3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              XÂY DỰNG THUẬN PHÁT
+            </a>
           </div>
         </div>
 
         {/* Dòng bản quyền */}
         <div className="footer-bottom">
-          Copyright 2025 © <strong>AAAAAAAAAAAAAAAAAAA.vn</strong>
+          Copyright 2025 © <strong>xaydungtrongoithuanphat.com</strong>
         </div>
       </footer>
     </div>

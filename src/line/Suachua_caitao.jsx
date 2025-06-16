@@ -6,6 +6,8 @@ import img9 from "../img/9.jpg";
 import img16 from "../img/16.jpg";
 import img11 from "../img/11.jpg";
 import img15 from "../img/15.jpg";
+import { NavLink } from "react-router-dom";
+import FORMLH from "../line/FORMLH";
 
 export default function Suachua_caitao() {
   return (
@@ -26,14 +28,31 @@ export default function Suachua_caitao() {
           Đến với chúng tôi, quý khách không chỉ nhận được mức giá tốt nhất mà
           còn đảm bảo được chất lượng cũng như thời gian hoàn thiện nhanh chóng.
         </p>
-        <img className="img_tg" src={img13} alt="" />
-        <img className="img_tg" src={img1} alt="" />
-        <img className="img_tg" src={img2} alt="" />
-        <img className="img_tg" src={img8} alt="" />
-        <img className="img_tg" src={img9} alt="" />
-        <img className="img_tg" src={img16} alt="" />
-        <img className="img_tg" src={img11} alt="" />
-        <img className="img_tg" src={img15} alt="" />
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img13} alt="" />
+        </NavLink>
+
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img1} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img2} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img8} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img9} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img16} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img11} alt="" />
+        </NavLink>
+        <NavLink to="/sua-chua-cai-tao">
+          <img className="img_tg" src={img15} alt="" />
+        </NavLink>
       </div>
     </div>
   );
