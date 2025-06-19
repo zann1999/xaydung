@@ -16,11 +16,12 @@ export default function Gioithieu() {
 
       <div className="gioithieu">
         <h2>
-          <span className="span_gt_1">VỀ CHÚNG TÔI</span>
+          <span className="span_gt_1 box box-1">VỀ CHÚNG TÔI</span>
           <div class="vertical-line"></div>
-          <span className="span_gt_2">XÂY DỰNG</span>{" "}
-          <span className="span_gt_3">THUẬN PHÁT</span>
+          <span className="span_gt_2 box box-2">XÂY DỰNG</span>{" "}
+          <span className="span_gt_3 box box-3">THUẬN PHÁT</span>
         </h2>
+
         <h4>
           Công ty xây dựng Thuận Phát là công ty chuyên thiết kế, thi công xây
           dựng các công trình nhà phố, biệt thự, trường học, khách sạn. Chúng

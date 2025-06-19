@@ -13,9 +13,10 @@ export default function Gioithieu() {
         <div className="home_gioithieu">
           <div className="box_gt_2">
             <h2>
-              <span className="vct">VỀ CHÚNG TÔI</span>
+              <span className="vct  box box-1">VỀ CHÚNG TÔI</span>
               <div class="vertical-line"></div>
-              <span>XÂY DỰNG</span> <span>THUẬN PHÁT</span>
+              <span className="box box-2">XÂY DỰNG</span>{" "}
+              <span className="box box-3">THUẬN PHÁT</span>
             </h2>
             <img className="img_tg" src={img4} alt="" />
             <img className="img_tg" src={img5} alt="" />

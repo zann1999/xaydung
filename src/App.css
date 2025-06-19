@@ -1081,7 +1081,13 @@ div {
 .logo_mobile {
   display: none;
 }
+.bottom-nav {
+  display: none;
+}
 @media (max-width: 1312px) {
+  .bottom-nav {
+    display: none;
+  }
   .gioithieu {
     h2 {
       max-width: 560px;
@@ -1187,6 +1193,9 @@ div {
     a {
     }
   }
+  .bottom-nav {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .nav_sub {
@@ -1235,7 +1244,7 @@ div {
     .vertical-line {
       left: 300px;
       top: -10px;
-      width: 4px;
+      width: 8px;
     }
   }
   .img_gt_5 {
@@ -1356,9 +1365,7 @@ div {
     h2 {
       font-size: 28px;
       max-width: 240px;
-      .vertical-line {
-        left: 50px;
-      }
+
       .vct {
         margin-right: 0px;
       }
@@ -1591,6 +1598,7 @@ div {
     width: 100%;
   }
   .bottom-nav {
+    display: block;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1659,5 +1667,42 @@ div {
   }
   .footer {
     padding-bottom: 71px;
+  }
+  .box_xaynha {
+    overflow-x: hidden;
+  }
+}
+
+.box {
+  animation: colorPulse 6s infinite;
+  animation-fill-mode: forwards;
+}
+
+/* Delay mỗi box để hiệu ứng lần lượt */
+.box-1 {
+  animation-delay: 0s;
+}
+
+.box-2 {
+  animation-delay: 2s;
+}
+
+.box-3 {
+  animation-delay: 4s;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: black;
+  }
+  30% {
+    color: #2774ae;
+    transform: scale(1.05);
+  }
+  60% {
+    color: black;
+  }
+  100% {
+    color: black;
   }
 }
