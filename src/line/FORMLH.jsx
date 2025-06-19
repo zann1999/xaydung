@@ -26,15 +26,16 @@ export default function FORRMLH() {
           <div className="support-box">
             <h4>Hotline tư vấn</h4>
             <p>Hỗ trợ 24/7 bất cứ lúc nào quý khách cần.</p>
-
-            <div class="call-wrapper">
-              <div class="call-pulse"></div>
-              <button class="call-button">
-                <div className="support-button phone">
-                  <FaPhone /> 078.353.7459 - 0961.033.660
-                </div>
-              </button>
-            </div>
+            <a href="tel:0783537459">
+              <div class="call-wrapper">
+                <div class="call-pulse"></div>
+                <button class="call-button">
+                  <div className="support-button phone">
+                    <FaPhone /> 078.353.7459 - 0961.033.660
+                  </div>
+                </button>
+              </div>
+            </a>
           </div>
 
           <div className="support-box">

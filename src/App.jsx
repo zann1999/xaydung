@@ -6,11 +6,19 @@ import Xaynhatrongoi from "./pages/Xaynhatrongoi";
 import Lienhe from "./pages/Lienhe";
 import Suachua_caitao from "./pages/Suachua_caitao";
 import React, { useRef, useState, useEffect } from "react";
+
 import QuoteForm from "./line/Popup";
 import ScrollToTop from "./pages/ScrollToTop";
 import { NavLink } from "react-router-dom";
 import logo from "./img/Lo go thuận phát.jpg";
-import { FaBars } from "react-icons/fa";
+
+import {
+  FaBars,
+  FaPhone,
+  FaFacebookMessenger,
+  FaEnvelope,
+} from "react-icons/fa";
+import { SiZalo } from "react-icons/si";
 function App() {
   const [showForm, setShowForm] = useState(false);
   const popupRef = useRef(null);
@@ -30,13 +38,111 @@ function App() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [showForm]);
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const openMenu = () => {
+    setIsVisible(true);
+    setIsOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    setTimeout(() => setIsVisible(false), 400); // khớp animation
+  };
+
+  const handleMenuClick = () => {
+    closeMenu();
+  };
+  // Để kích hoạt class CSS
+  const [isVisible, setIsVisible] = useState(false); // Giữ component trong DOM
+
   return (
     <div>
       <div className="nav_sub">
         <nav id="navbar">
-          <div className="menu">
+          <div className="menu" onClick={() => setIsOpen(true)}>
             <FaBars size={24} />
           </div>
+
+          {isOpen && (
+            <div className="overlay">
+              <div
+                className={`menu-popup ${isOpen ? "slide-in" : "slide-out"}`}
+                ref={menuRef}
+              >
+                <NavLink
+                  onClick={handleMenuClick}
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "active show_mobile" : "show_mobile"
+                  }
+                >
+                  TRANG CHỦ
+                </NavLink>
+                <div className="line_menu"></div>
+                <NavLink
+                  onClick={handleMenuClick}
+                  to="/gioi-thieu"
+                  className={({ isActive }) =>
+                    isActive ? "active show_mobile" : "show_mobile"
+                  }
+                >
+                  GIỚI THIỆU
+                </NavLink>
+                <div className="line_menu"></div>
+
+                <NavLink
+                  onClick={handleMenuClick}
+                  to="/xay-nha-tron-goi"
+                  className={({ isActive }) =>
+                    isActive ? "active show_mobile" : "show_mobile"
+                  }
+                >
+                  XÂY NHÀ TRỌN GÓI
+                </NavLink>
+                <div className="line_menu"></div>
+
+                <NavLink
+                  onClick={handleMenuClick}
+                  to="/sua-chua-cai-tao"
+                  className={({ isActive }) =>
+                    isActive ? "active show_mobile" : "show_mobile"
+                  }
+                >
+                  SỬA CHỮA, CẢI TẠO
+                </NavLink>
+                <div className="line_menu"></div>
+
+                <NavLink
+                  onClick={handleMenuClick}
+                  to="/lien-he"
+                  className={({ isActive }) =>
+                    isActive ? "active show_mobile" : "show_mobile"
+                  }
+                >
+                  LIÊN HỆ
+                </NavLink>
+                <div className="line_menu"></div>
+              </div>
+            </div>
+          )}
+
           <NavLink to="/" className={"logo_mobile"}>
             <img className="logo" src={logo} alt="Logo" />
           </NavLink>
@@ -111,6 +217,52 @@ function App() {
           <div class="wheel"></div>
           <div class="wheel"></div>
         </div>
+      </div>
+      <div className="bottom-nav">
+        <div className="nav-item menu" onClick={() => setIsOpen(true)}>
+          <FaBars size={24} />
+
+          <span>Menu</span>
+        </div>
+        <a href="tel:0783537459" className="contact-link">
+          <div className="nav-item">
+            <FaPhone size={20} />
+            <span>Gọi điện</span>
+          </div>
+        </a>
+        <a
+          href="https://www.facebook.com/share/1GdAt2fpb3/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="nav-item livechat_box">
+            <FaFacebookMessenger size={20} className="livechat" />
+            <span>Live chat</span>
+          </div>
+        </a>
+        <a
+          href="https://zalo.me/0783537459"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          <div className="nav-item zalo_bot">
+            <SiZalo size={30} />
+            <span>Zalo</span>
+          </div>
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=congtythuanphat57@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link contact-link-mail"
+        >
+          <div className="nav-item">
+            <FaEnvelope size={20} />
+            <span>Gửi Email</span>
+          </div>
+        </a>
       </div>
     </div>
   );

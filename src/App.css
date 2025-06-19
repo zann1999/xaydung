@@ -1226,13 +1226,14 @@ div {
   .gioithieu {
     margin-top: -100px;
     h2 {
-      font-size: 28px;
+      font-size: 36px;
+      font-weight: 800;
     }
     h4 {
-      font-size: 16px;
+      font-size: 18px;
     }
     .vertical-line {
-      left: 250px;
+      left: 300px;
       top: -10px;
       width: 4px;
     }
@@ -1246,7 +1247,7 @@ div {
     height: 240px !important;
   }
   .home_gioithieu {
-    min-height: 780px;
+    min-height: 878px;
   }
   .xe {
     width: 200px !important;
@@ -1255,10 +1256,11 @@ div {
   .section {
     h2 {
       margin-top: 0px;
-      font-size: 28px;
+      font-size: 36px;
+      font-weight: 800;
     }
     p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .features {
@@ -1288,7 +1290,7 @@ div {
   }
 
   .feature-description {
-    font-size: 13px;
+    font-size: 14px;
 
     color: #555;
   }
@@ -1316,7 +1318,7 @@ div {
       font-size: 28px;
     }
     .font_def {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .contact {
@@ -1387,7 +1389,7 @@ div {
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
     }
     .support-button {
       font-size: 14px;
@@ -1404,16 +1406,16 @@ div {
   }
   .bang {
     .title {
-      font-size: 16px;
+      font-size: 18px;
     }
     .uudiem {
-      font-size: 16px;
+      font-size: 18px;
     }
     .nhuocdiem {
-      font-size: 16px;
+      font-size: 18px;
     }
     td {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .quytrinh {
@@ -1421,10 +1423,10 @@ div {
       font-size: 28px;
     }
     h4 {
-      font-size: 16px;
+      font-size: 18px;
     }
     p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .noibat {
@@ -1432,7 +1434,8 @@ div {
       font-size: 28px;
     }
     h6 {
-      font-size: 16px;
+      font-size: 18px;
+
       text-align: left;
     }
     .feature-icon {
@@ -1448,10 +1451,210 @@ div {
       font-size: 22px;
     }
     h6 {
+      font-size: 18px;
+    }
+  }
+  .suachua_page {
+    margin-top: 80px;
+  }
+  .footer {
+    font-size: 16px;
+    a {
       font-size: 16px;
     }
   }
-  .suachua_mobile {
-    margin-top: 120px;
+  .xaynhatrongoi_page {
+    .bang {
+      max-width: 99%;
+    }
+  }
+  form {
+    select {
+      height: 48px;
+    }
+  }
+  .menu {
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* làm mờ nền */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .menu-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-popup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #navbar {
+    .show_mobile {
+      display: block;
+    }
+  }
+  /* Menu popup */
+  .menu-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+  }
+
+  /* Mở từ trái qua phải */
+  .slide-in {
+    animation-name: slideInFromLeft;
+  }
+
+  /* Đóng từ phải qua trái */
+  .slide-out {
+    animation-name: slideOutToLeft;
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideOutToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .menu-popup {
+    border-radius: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    text-align: left;
+    gap: 0px;
+    background-color: #2774ae;
+    a {
+      color: white;
+      padding-left: 20px;
+    }
+    .active {
+      background-color: white;
+    }
+  }
+
+  .boxpopup {
+    width: 96%;
+    margin: auto;
+    margin-right: 2%;
+
+    .quote-form-container {
+      p {
+        display: block !important;
+      }
+    }
+  }
+  .line_menu {
+    display: block;
+    height: 1px;
+    background-color: #999999;
+    width: 100%;
+  }
+  .bottom-nav {
+    a {
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #2774ae;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .nav-item svg {
+    margin-bottom: 4px;
+  }
+
+  .nav-item.active {
+    position: relative;
+  }
+
+  .nav-item.active::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-item.active svg {
+    color: #0277bd;
+  }
+  .zalo_bot {
+    padding: 0 10px;
+  }
+  .livechat {
+    width: 36px;
+    height: 36px;
+  }
+  .livechat_box {
+    margin-top: -20px;
+    background-color: #2774ae;
+    padding-top: 10px;
+    border-radius: 26px;
+  }
+  .footer {
+    padding-bottom: 71px;
   }
 }
