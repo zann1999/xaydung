@@ -1368,10 +1368,11 @@ div {
 
       .vct {
         margin-right: 0px;
-        white-space: nowrap;
       }
+
       span {
         font-size: 28px;
+        white-space: nowrap;
       }
       .vertical-line {
         left: 250px;
