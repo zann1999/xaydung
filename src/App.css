@@ -1368,6 +1368,7 @@ div {
 
       .vct {
         margin-right: 0px;
+        white-space: nowrap;
       }
       span {
         font-size: 28px;
