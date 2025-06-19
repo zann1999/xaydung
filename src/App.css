@@ -1272,7 +1272,7 @@ div {
   .feature-box {
     width: 120px;
 
-    height: 180px;
+    height: 192px;
   }
 
   .feature-icon {
@@ -1415,7 +1415,7 @@ div {
       font-size: 18px;
     }
     td {
-      font-size: 18px;
+      font-size: 18px !important;
     }
   }
   .quytrinh {
@@ -1465,7 +1465,8 @@ div {
   }
   .xaynhatrongoi_page {
     .bang {
-      max-width: 99%;
+      width: 96vw !important;
+      max-width: 96vw !important;
     }
   }
   form {
@@ -1590,10 +1591,6 @@ div {
     width: 100%;
   }
   .bottom-nav {
-    a {
-      padding-bottom: 0px;
-      padding-top: 0px;
-    }
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1602,9 +1599,14 @@ div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8px 0;
+    gap: 0px !important;
+    max-width: 100vw;
     z-index: 1000;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    a {
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
   }
 
   .nav-item {
@@ -1614,6 +1616,7 @@ div {
     color: white;
     font-size: 14px;
     cursor: pointer;
+    padding: 11px 8px;
   }
 
   .nav-item svg {
@@ -1642,7 +1645,7 @@ div {
     color: #0277bd;
   }
   .zalo_bot {
-    padding: 0 10px;
+    padding: 5px 15px;
   }
   .livechat {
     width: 36px;
@@ -1652,7 +1655,7 @@ div {
     margin-top: -20px;
     background-color: #2774ae;
     padding-top: 10px;
-    border-radius: 26px;
+    border-radius: 30px;
   }
   .footer {
     padding-bottom: 71px;
