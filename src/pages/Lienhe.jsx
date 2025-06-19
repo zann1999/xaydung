@@ -29,22 +29,34 @@ export default function Lienhe() {
           <div className="support-box">
             <h4>Hotline tư vấn</h4>
             <p>Hỗ trợ 24/7 bất cứ lúc nào quý khách cần.</p>
-            <div className="support-button phone">
-              <FaPhone /> 078.353.7459 - 0961.033.660
+
+            <div class="call-wrapper">
+              <div class="call-pulse"></div>
+              <button class="call-button">
+                <div className="support-button phone">
+                  <FaPhone /> 078.353.7459 - 0961.033.660
+                </div>
+              </button>
             </div>
           </div>
 
           <div className="support-box">
             <h4>Hỗ trợ qua Facebook</h4>
             <p>Đội ngũ trực tuyến 100% đảm bảo phản hồi nhanh.</p>
+
             <a
               href="https://www.facebook.com/share/1GdAt2fpb3/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <div className="support-button fb">
-                <FaFacebookF /> FANPAGE THUẬN PHÁT
+              <div class="call-wrapper">
+                <div class="call-pulse"></div>
+                <button class="call-button">
+                  <div className="support-button fb">
+                    <FaFacebookF /> FANPAGE THUẬN PHÁT
+                  </div>
+                </button>
               </div>
             </a>
           </div>

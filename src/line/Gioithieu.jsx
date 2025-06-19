@@ -9,16 +9,17 @@ export default function Gioithieu() {
       <NavLink to="/gioi-thieu">
         <img className="img_gt_5" src={img4} alt="" />
       </NavLink>
-      <NavLink to="/gioi-thieu">
+      <NavLink to="/gioi-thieu" className={"a121"}>
         <img className="img_gt_4" src={img5} alt="" />
       </NavLink>
       <img className="xe" src={xe} alt="" />
 
       <div className="gioithieu">
         <h2>
-          <span>VỀ CHÚNG TÔI</span>
+          <span className="span_gt_1">VỀ CHÚNG TÔI</span>
           <div class="vertical-line"></div>
-          <span>XÂY DỰNG</span> <span>THUẬN PHÁT</span>
+          <span className="span_gt_2">XÂY DỰNG</span>{" "}
+          <span className="span_gt_3">THUẬN PHÁT</span>
         </h2>
         <h4>
           Công ty xây dựng Thuận Phát là công ty chuyên thiết kế, thi công xây

@@ -18,29 +18,57 @@ export default function Lienhe() {
     <div className="lienhe">
       <div className="contact_sub">
         <div className="contact">
-          <div className="contact-item">
-            <FaHeadset className="contact-icon" />
-            <div>
-              <div>Hotline hỗ trợ 24/7</div>
-              <strong>078.353.7459 - 0961.033.660</strong>
+          <a href="tel:0783537459" className="contact-link">
+            <div className="contact-item">
+              <FaHeadset className="contact-icon" />
+              <div>
+                <div className="contact_pc">Hotline hỗ trợ 24/7</div>
+                <strong>078.353.7459 - 0961.033.660</strong>
+              </div>
             </div>
-          </div>
-
-          <div className="contact-item">
-            <SiZalo className="contact-icon" />
-            <div>
-              <div>Tư vấn qua Zalo</div>
-              <strong>078.353.7459</strong>
+          </a>
+          <a
+            href="https://zalo.me/0783537459"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            <div className="contact-item">
+              <SiZalo className="contact-icon" />
+              <div>
+                <div className="contact_pc">Tư vấn qua Zalo</div>
+                <strong>078.353.7459</strong>
+              </div>
             </div>
-          </div>
-
-          <div className="contact-item">
-            <MdEmail className="contact-icon" />
-            <div>
-              <div>Gửi yêu cầu</div>
-              <strong>congtythuanphat57@gmail.com</strong>
+          </a>
+          <a
+            href="https://www.facebook.com/share/1GdAt2fpb3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="contact-item">
+              <FaFacebook className="contact-icon" />
+              <div>
+                <div className="contact_pc">Liên hệ qua Fanpage</div>
+                <strong>Thuận Phát</strong>
+              </div>
             </div>
-          </div>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=congtythuanphat57@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link contact-link-mail"
+          >
+            <div className="contact-item">
+              <MdEmail className="contact-icon" />
+              <div>
+                <div className="contact_pc">Gửi yêu cầu</div>
+                <strong>congtythuanphat57</strong> <strong>@gmail.com</strong>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <footer className="footer">

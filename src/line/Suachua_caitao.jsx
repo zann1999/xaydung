@@ -12,7 +12,7 @@ import FORMLH from "../line/FORMLH";
 export default function Suachua_caitao() {
   return (
     <div>
-      <div className="suachua">
+      <div className="suachua suachua_mobile">
         <div className="suachua_sub">
           <span className="suachua_subtext">SỬA CHỮA, CẢI TẠO</span>
         </div>

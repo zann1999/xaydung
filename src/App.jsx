@@ -10,6 +10,7 @@ import QuoteForm from "./line/Popup";
 import ScrollToTop from "./pages/ScrollToTop";
 import { NavLink } from "react-router-dom";
 import logo from "./img/Lo go thuận phát.jpg";
+import { FaBars } from "react-icons/fa";
 function App() {
   const [showForm, setShowForm] = useState(false);
   const popupRef = useRef(null);
@@ -33,6 +34,12 @@ function App() {
     <div>
       <div className="nav_sub">
         <nav id="navbar">
+          <div className="menu">
+            <FaBars size={24} />
+          </div>
+          <NavLink to="/" className={"logo_mobile"}>
+            <img className="logo" src={logo} alt="Logo" />
+          </NavLink>
           <NavLink to="/">
             <img className="logo" src={logo} alt="Logo" />
           </NavLink>
@@ -50,7 +57,6 @@ function App() {
             GIỚI THIỆU
           </NavLink>
           <p className="line_nav">|</p>
-
           <NavLink
             to="/xay-nha-tron-goi"
             className={({ isActive }) => (isActive ? "active" : "")}
@@ -58,7 +64,6 @@ function App() {
             XÂY NHÀ TRỌN GÓI
           </NavLink>
           <p className="line_nav">|</p>
-
           <NavLink
             to="/sua-chua-cai-tao"
             className={({ isActive }) => (isActive ? "active" : "")}
@@ -66,7 +71,6 @@ function App() {
             SỬA CHỮA, CẢI TẠO
           </NavLink>
           <p className="line_nav">|</p>
-
           <NavLink
             to="/lien-he"
             className={({ isActive }) => (isActive ? "active" : "")}
