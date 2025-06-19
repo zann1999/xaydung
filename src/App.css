@@ -1365,9 +1365,10 @@ div {
     h2 {
       font-size: 28px;
       max-width: 240px;
-
+      display: flex;
+      flex-direction: column;
       .vct {
-        margin-right: 24px;
+        margin-right: 0px;
       }
 
       span {
